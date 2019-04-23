@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -17,7 +17,22 @@
   <body>
 
     <!-- Place your content here -->
-    <a href="http://sixrevisions.com/html5/html5-template/">Read the tutorial</a>
+    <p>
+      <a href="about">このサービスについて</a>
+    </p>
+    <h1>お問い合わせ</h1>
+    <form action="confirm" method="POST">
+      <div>
+	email:<input type="text" name="email" value="">
+      </div>
+      <div>
+	本文:
+	<textarea name="message" rows="5"></textarea>
+      </div>
+      <div>
+	<input type="submit" value="送信する">
+      </div>
+    </form>
 
     <!-- SCRIPTS -->
     <!-- Example: <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
