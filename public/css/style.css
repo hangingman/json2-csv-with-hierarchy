@@ -35,3 +35,13 @@ body {
     width: 49%; /*右カラム幅設定*/
     float: right; /*右のフロート配置*/
 }
+
+textarea {
+    resize: auto;
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 100px;
+    min-height: 100px;
+    width:500px;
+    height:500px
+}
