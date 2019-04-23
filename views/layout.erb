@@ -17,22 +17,36 @@
   <body>
 
     <!-- Place your content here -->
-    <p>
-      <a href="about">このサービスについて</a>
-    </p>
-    <h1>お問い合わせ</h1>
-    <form action="confirm" method="POST">
-      <div>
-	email:<input type="text" name="email" value="">
+    <div class="container">
+      <div class="left_wrap">
+
+	<h1>JSON</h1>
+	<form action="confirm" method="POST">
+	  <div>
+	    本文:
+	    <textarea name="message" rows="5"></textarea>
+	  </div>
+	  <div>
+	    <input type="submit" value="送信する">
+	  </div>
+	</form>
+
       </div>
-      <div>
-	本文:
-	<textarea name="message" rows="5"></textarea>
+      <div class="right_wrap">
+
+	<h1>CSV</h1>
+	<form action="confirm" method="POST">
+	  <div>
+	    本文:
+	    <textarea name="message" rows="5"></textarea>
+	  </div>
+	  <div>
+	    <input type="submit" value="送信する">
+	  </div>
+	</form>
+
       </div>
-      <div>
-	<input type="submit" value="送信する">
-      </div>
-    </form>
+    </div>
 
     <!-- SCRIPTS -->
     <!-- Example: <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->

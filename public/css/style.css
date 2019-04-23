@@ -1,6 +1,6 @@
 body {
     /* 画像ファイルの指定 */
-    background-image: url(../img/pankaj-patel-526231-unsplash.jpg);
+    background-image: url(../img/jazmin-quaynor-105210-unsplash.jpg);
 
     /* 画像を常に天地左右の中央に配置 */
     background-position: center center;
@@ -16,4 +16,22 @@ body {
 
     /* 背景画像が読み込まれる前に表示される背景のカラー */
     background-color: #464646;
+}
+
+.container {
+    width: 1000px; /*必要な幅に設定*/
+    margin: auto; /*ブラウザ中央に配置*/
+}
+.container:after { /*clearfix設定*/
+    content:"";
+    display:block;
+    clear:both;
+}
+.left_wrap {
+    width: 49%; /*左カラム幅設定*/
+    float: left; /*左にフロート配置*/
+}
+.right_wrap {
+    width: 49%; /*右カラム幅設定*/
+    float: right; /*右のフロート配置*/
 }
