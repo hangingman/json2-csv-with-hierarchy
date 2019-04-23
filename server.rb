@@ -10,6 +10,8 @@ end
 
 post '/json2csv' do
   @json = params[:json]
-  json2csv(@json)
+  @csv = Json2Csv.new.json2csv(@json)
+
+  p @csv
   erb :index
 end
