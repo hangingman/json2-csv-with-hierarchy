@@ -1,7 +1,9 @@
+# coding: utf-8
 require 'sinatra'
 require "json"
 
 
 get '/' do
-  "Hello, world!"
+  @title = 'JSONからCSVへの変換'
+  erb :index
 end
