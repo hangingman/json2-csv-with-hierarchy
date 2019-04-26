@@ -12,6 +12,17 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139122692-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139122692-1');
+    </script>
+
     <link rel="shortcut icon" href="">
   </head>
   <body>
@@ -23,7 +34,7 @@
 	<h1>JSON</h1>
 	<form action="json2csv" method="POST">
 	  <div>
-	    <textarea name="json" rows="5"></textarea>
+	    <textarea name="json" rows="5"><%= @json %></textarea>
 	  </div>
 	  <div>
 	    <input type="submit" value="変換">
